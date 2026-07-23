@@ -1,49 +1,79 @@
 # AI Creator portfolio — Higgsfield application
 
-A one-page, bilingual (EN/RU) portfolio site to showcase Higgsfield-made work for an **AI Creator** application.
+A one-page, bilingual (EN/RU) portfolio showcasing two bodies of Higgsfield work:
+
+1. **Animated object characters** — Pixar-style 3D household objects with faces and emotion (images + video).
+2. **AI fashion & ads** — photoreal model shots and a full clothing-store video ad.
 
 ## Structure
 
 ```
-index.html      — page markup (all text lives here, wrapped in .en / .ru spans)
-css/style.css   — dark, cinematic styling, fully responsive
-js/script.js    — gallery data (WORKS array), lightbox, filters, language + mobile nav
-images/         — your photos + video thumbnails (see images/README.md)
-video/          — your video clips (see video/README.md)
+index.html          — page markup; all text lives here in .en / .ru spans
+css/style.css       — dark cinematic theme, masonry gallery, responsive
+js/script.js        — WORKS data + gallery, filters, lightbox, language, mobile nav
+assets/
+  thumb/<name>.jpg  — gallery card image     (long edge 900px, ~25–80KB)
+  full/<name>.jpg   — lightbox image         (long edge 1600px)
+  poster/<name>.jpg — video poster frame
+  video/<name>.mp4  — web video clip
+images/             — original full-res PNG/GIF source files (not loaded by the page)
+video/              — original video source files
 ```
 
-## 1. Personalize the text
+The page **only loads the optimized `assets/` versions** — the originals in `images/` and
+`video/` are kept as source files. That's why the site stays fast even though the raw
+PNGs are 19–22MB each.
 
-Open `index.html` and replace the placeholders:
+## Personalize the text
 
-- `YOUR NAME` in the header logo
-- `[Your Name]` / `[Ваше имя]` in the About and Footer sections
-- `[Ваш город / Your city]` in the About facts list
-- `your.email@example.com` and the social links (`Instagram`, `TikTok`, `X / Twitter`, `Behance`) in the Contact section — replace the `href="#"` with your real profile URLs
+In `index.html`, replace:
 
-## 2. Add your work
+- `YOUR NAME` (header logo)
+- `[Your Name]` / `[Ваше имя]` (About + footer)
+- `[Ваш город / Your city]` (About facts)
+- `your.email@example.com` and the social links (`Instagram`, `TikTok`, `X / Twitter`, `Higgsfield`) in the Contact section — swap each `href="#"` for your real profile URL.
 
-1. Drop your images into `/images` and videos into `/video` using the filenames listed in each folder's `README.md` (or your own names).
-2. Open `js/script.js` and edit the `WORKS` array — each entry needs `type` (`"image"` or `"video"`), `src`, a `poster` (videos only), bilingual `title_en`/`title_ru`, `desc_en`/`desc_ru`, and `tags`.
-3. Add or remove entries freely — the gallery, filters and lightbox all render from this array automatically.
+## Add or change a work
 
-Until a real file exists at the given path, that card shows a dashed "file missing" placeholder telling you exactly what to add — nothing breaks.
+1. Drop the new image into `images/` (or video into `video/`).
+2. Regenerate the optimized assets — see **Regenerating assets** below — or just add a
+   ready-made `thumb`, `full` (and `poster` + `mp4` for video) into `assets/` yourself.
+3. Add an entry to the `WORKS` array in `js/script.js`:
 
-## 3. Preview locally
+   ```js
+   { name: "char-fridge", cat: "character", type: "image",
+     title_en: "...", title_ru: "...", desc_en: "...", desc_ru: "..." }
+   ```
+   - `cat`: `"character"` or `"fashion"` (drives the filter + badge)
+   - `type`: `"image"` or `"video"`
+   - `name`: the asset basename (without extension) used across `assets/*`
 
-Just open `index.html` in a browser, or serve it locally:
+The gallery, filters and lightbox all render from this array automatically.
+
+## Regenerating assets
+
+Assets were generated with Python (Pillow) + ffmpeg (via `imageio-ffmpeg`):
+
+```bash
+pip install Pillow imageio-ffmpeg
+# images  -> assets/thumb (900px) + assets/full (1600px), JPEG q80–84
+# videos  -> copied to assets/video + a poster frame to assets/poster
+```
+
+See the commit history for the exact one-off scripts, or ask and they can be added as a
+`scripts/build-assets.py` helper.
+
+## Preview locally
 
 ```bash
 python3 -m http.server 8000
-# then visit http://localhost:8000
+# open http://localhost:8000
 ```
 
-## 4. Deploy
+## Deploy (GitHub Pages)
 
-Easiest option — GitHub Pages:
+1. Push this branch (or merge into `main`).
+2. Repo **Settings → Pages → Source** → pick the branch and `/ (root)`.
+3. Site publishes at `https://<username>.github.io/<repo>/`.
 
-1. Push this branch (or merge it into `main`).
-2. In the repo: **Settings → Pages → Source** → select the branch and `/ (root)`.
-3. GitHub will publish the site at `https://<username>.github.io/<repo>/`.
-
-No build step, no dependencies — it's plain HTML/CSS/JS.
+No build step, no dependencies — plain HTML/CSS/JS.

@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Creator Portfolio — Higgsfield Application</title>
-<meta name="description" content="AI Creator portfolio — cinematic images and videos generated with Higgsfield.">
-<link rel="icon" href="data:,">
+<meta name="description" content="AI Creator portfolio — Pixar-style animated characters and photoreal AI fashion & ads, made with Higgsfield.">
+<meta property="og:title" content="AI Creator Portfolio — Higgsfield">
+<meta property="og:description" content="Pixar-style animated characters & photoreal AI fashion, made with Higgsfield.">
+<meta property="og:image" content="assets/poster/fashion-ad.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,27 +16,25 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#hero" class="logo">YOUR NAME<span class="dot">.</span></a>
-
     <nav class="main-nav" id="mainNav">
-      <a href="#about" class="en">About</a><a href="#about" class="ru">Обо мне</a>
-      <a href="#skills" class="en">Skills</a><a href="#skills" class="ru">Навыки</a>
+      <a href="#specialties" class="en">What I do</a><a href="#specialties" class="ru">Что я делаю</a>
+      <a href="#feature" class="en">Case</a><a href="#feature" class="ru">Кейс</a>
       <a href="#work" class="en">Work</a><a href="#work" class="ru">Работы</a>
+      <a href="#about" class="en">About</a><a href="#about" class="ru">Обо мне</a>
       <a href="#contact" class="en">Contact</a><a href="#contact" class="ru">Контакты</a>
     </nav>
-
     <div class="header-actions">
       <button class="lang-toggle" id="langToggle" aria-label="Switch language">
         <span class="lang-opt" data-lang-opt="en">EN</span>/<span class="lang-opt" data-lang-opt="ru">RU</span>
       </button>
-      <button class="nav-burger" id="navBurger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <main>
 
+  <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero-glow"></div>
     <div class="container hero-inner">
@@ -42,128 +43,142 @@
         <span class="ru">Заявка на позицию AI Creator в Higgsfield</span>
       </p>
       <h1>
-        <span class="en">I turn prompts into<br>cinematic worlds.</span>
-        <span class="ru">Превращаю промпты<br>в кинематографичные миры.</span>
+        <span class="en">I make AI content<br>that stops the scroll<br>and sells.</span>
+        <span class="ru">Создаю AI-контент,<br>который останавливает скролл<br>и продаёт.</span>
       </h1>
       <p class="hero-sub">
-        <span class="en">AI creator crafting cinematic images and videos with Higgsfield — camera control, character consistency and style presets, pushed to their limit.</span>
-        <span class="ru">AI-криэйтор, создающий кинематографичные изображения и видео с помощью Higgsfield — управление камерой, консистентность персонажей и стилевые пресеты на максимуме возможностей.</span>
+        <span class="en">Two specialties, one toolkit: Pixar-style animated characters that go viral, and photoreal AI fashion &amp; ads that replace a full studio shoot — all made with Higgsfield.</span>
+        <span class="ru">Два направления, один инструментарий: оживлённые персонажи в стиле Pixar для вирусного контента и фотореалистичный AI-фэшн и реклама, заменяющие целую студийную съёмку — всё создано в Higgsfield.</span>
       </p>
       <div class="hero-cta">
-        <a href="#work" class="btn btn-primary">
-          <span class="en">View my work</span><span class="ru">Смотреть работы</span>
-        </a>
-        <a href="#contact" class="btn btn-ghost">
-          <span class="en">Get in touch</span><span class="ru">Связаться</span>
-        </a>
+        <a href="#work" class="btn btn-primary"><span class="en">View the work</span><span class="ru">Смотреть работы</span></a>
+        <a href="#feature" class="btn btn-ghost"><span class="en">Watch the ad</span><span class="ru">Смотреть ролик</span></a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>18+</strong><span class="en">generated pieces</span><span class="ru">работ</span></div>
+        <div><strong>2</strong><span class="en">content verticals</span><span class="ru">направления</span></div>
+        <div><strong>9:16</strong><span class="en">social-native</span><span class="ru">формат соцсетей</span></div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container about-inner">
-      <div class="about-photo">
-        <img src="images/profile.jpg" alt="Profile photo" onerror="this.closest('.about-photo').classList.add('missing')">
-        <div class="missing-hint">
-          <span class="en">Add <code>images/profile.jpg</code></span>
-          <span class="ru">Добавьте <code>images/profile.jpg</code></span>
-        </div>
-      </div>
-      <div class="about-text">
-        <h2><span class="en">About me</span><span class="ru">Обо мне</span></h2>
-        <p class="en">Hi, I'm <strong>[Your Name]</strong> — an AI creator who has spent the last months living inside Higgsfield: generating cinematic shots, iterating on prompts and presets, and shipping content that looks like it came out of a real production, not a text box. This page is my application for the <strong>AI Creator</strong> role — a collection of the work I'd bring to the team.</p>
-        <p class="ru">Привет, меня зовут <strong>[Ваше имя]</strong> — AI-криэйтор, который последние месяцы буквально живёт в Higgsfield: генерирую кинематографичные кадры, оттачиваю промпты и пресеты, выпускаю контент, который выглядит как результат настоящей продакшн-съёмки, а не текстового поля. Эта страница — моя заявка на позицию <strong>AI Creator</strong>: подборка работ, которые я хочу принести в команду.</p>
-        <ul class="about-facts">
-          <li><span class="en">Platform:</span><span class="ru">Платформа:</span> Higgsfield (Cinema Studio, Soul, Presets)</li>
-          <li><span class="en">Focus:</span><span class="ru">Фокус:</span> <span class="en">cinematic video &amp; image generation</span><span class="ru">кинематографичная генерация видео и изображений</span></li>
-          <li><span class="en">Based in:</span><span class="ru">Локация:</span> [Ваш город / Your city]</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
+  <!-- SPECIALTIES -->
+  <section id="specialties" class="specialties">
     <div class="container">
-      <h2><span class="en">What I work with</span><span class="ru">С чем я работаю</span></h2>
-      <div class="skills-grid">
+      <h2><span class="en">What I do</span><span class="ru">Что я делаю</span></h2>
+      <div class="spec-grid">
 
-        <div class="skill-card">
-          <span class="skill-icon">🎬</span>
-          <h3><span class="en">Cinema Studio</span><span class="ru">Cinema Studio</span></h3>
-          <p class="en">Virtual camera body, lens and focal length control for shot-level cinematography.</p>
-          <p class="ru">Управление виртуальной камерой, объективом и фокусным расстоянием для операторской работы на уровне кадра.</p>
-        </div>
+        <article class="spec-card">
+          <span class="spec-tag">3D / Pixar-style</span>
+          <h3><span class="en">Animated object characters</span><span class="ru">Оживлённые предметы</span></h3>
+          <p class="en">I give everyday objects — a fridge, a fork, a power strip — a face, an emotion and a story. Cinematic 3D characters with consistent style, built for viral social clips and brand mascots.</p>
+          <p class="ru">Я даю обычным предметам — холодильнику, вилке, удлинителю — лицо, эмоцию и историю. Кинематографичные 3D-персонажи с единым стилем для вирусных клипов и брендовых маскотов.</p>
+          <ul class="spec-list">
+            <li><span class="en">Facial acting &amp; expression</span><span class="ru">Мимика и эмоции</span></li>
+            <li><span class="en">Character &amp; style consistency</span><span class="ru">Консистентность стиля</span></li>
+            <li><span class="en">Still + motion (image &amp; video)</span><span class="ru">Статика + движение</span></li>
+          </ul>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">🧬</span>
-          <h3><span class="en">Character consistency</span><span class="ru">Консистентность персонажей</span></h3>
-          <p class="en">Keeping faces and characters recognizable across shots and clips with Soul.</p>
-          <p class="ru">Сохранение узнаваемости лиц и персонажей между кадрами и клипами с помощью Soul.</p>
-        </div>
+        <article class="spec-card">
+          <span class="spec-tag spec-tag-alt">Photoreal / Commercial</span>
+          <h3><span class="en">AI fashion &amp; ads</span><span class="ru">AI-фэшн и реклама</span></h3>
+          <p class="en">A clothing photoshoot costs $300–500 and takes a full day. I produce the same catalog-ready looks and full video ads with AI — consistent model, real garments, no studio.</p>
+          <p class="ru">Фотосессия одежды стоит $300–500 и занимает целый день. Я делаю те же каталожные образы и полноценные видео-рекламы через ИИ — консистентная модель, реальная одежда, без студии.</p>
+          <ul class="spec-list">
+            <li><span class="en">Photoreal, consistent model</span><span class="ru">Фотореалистичная модель</span></li>
+            <li><span class="en">Full ad spots with hook &amp; CTA</span><span class="ru">Ролики с хуком и CTA</span></li>
+            <li><span class="en">Catalog &amp; social formats</span><span class="ru">Каталог и соцсети</span></li>
+          </ul>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">🎨</span>
-          <h3><span class="en">Style presets &amp; prompting</span><span class="ru">Стилевые пресеты и промптинг</span></h3>
-          <p class="en">Precise prompt writing and preset selection to hit a specific mood, light and look.</p>
-          <p class="ru">Точный промптинг и подбор пресетов ради конкретного настроения, света и визуального стиля.</p>
-        </div>
+      </div>
 
-        <div class="skill-card">
-          <span class="skill-icon">🖼️</span>
-          <h3><span class="en">Image → Video</span><span class="ru">Изображение → Видео</span></h3>
-          <p class="en">Turning a single reference photo into motion, using outpaint, reframe and motion control.</p>
-          <p class="ru">Превращение одного референсного фото в движение с помощью outpaint, reframe и motion control.</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-icon">🔎</span>
-          <h3><span class="en">Upscaling &amp; post</span><span class="ru">Апскейл и постобработка</span></h3>
-          <p class="en">Cleaning up and upscaling images and video to a final, deliverable quality.</p>
-          <p class="ru">Финальная чистка и апскейл изображений и видео до качества, готового к публикации.</p>
-        </div>
-
-        <div class="skill-card">
-          <span class="skill-icon">📈</span>
-          <h3><span class="en">Content that performs</span><span class="ru">Контент, который работает</span></h3>
-          <p class="en">Reading engagement and hook strength to keep improving what I publish.</p>
-          <p class="ru">Анализ вовлечённости и силы хука, чтобы постоянно улучшать публикуемый контент.</p>
-        </div>
-
+      <div class="tools-row">
+        <span class="tools-label"><span class="en">Built with:</span><span class="ru">Инструменты:</span></span>
+        <span class="tool-chip">Higgsfield Soul</span>
+        <span class="tool-chip">Cinema Studio</span>
+        <span class="tool-chip">Image → Video</span>
+        <span class="tool-chip">Style Presets</span>
+        <span class="tool-chip">Motion Control</span>
+        <span class="tool-chip">Upscale</span>
       </div>
     </div>
   </section>
 
+  <!-- FEATURE / CASE -->
+  <section id="feature" class="feature">
+    <div class="container feature-inner">
+      <div class="feature-video-wrap">
+        <video id="featureVideo" src="assets/video/fashion-ad.mp4" poster="assets/poster/fashion-ad.jpg" playsinline loop muted preload="none"></video>
+        <button class="feature-play" aria-hidden="true">▶</button>
+      </div>
+      <div class="feature-text">
+        <span class="spec-tag spec-tag-alt"><span class="en">Featured case</span><span class="ru">Избранный кейс</span></span>
+        <h2><span class="en">A clothing-store ad,<br>made without a studio</span><span class="ru">Реклама магазина одежды<br>без студии</span></h2>
+        <p class="en">This 27-second spot opens with a hook — <em>"Guess how much this clothing shoot cost?"</em> — runs three outfit changes on one consistent model, and closes on a call to action. A traditional version means a model, a photographer, a location and $300–500. This one is fully AI-generated.</p>
+        <p class="ru">Этот 27-секундный ролик открывается хуком — <em>«Угадайте, сколько стоила эта съёмка одежды?»</em> — показывает три смены образа на одной консистентной модели и завершается призывом к действию. Классический вариант — это модель, фотограф, локация и $300–500. Этот — полностью сгенерирован ИИ.</p>
+        <p class="feature-note en">▶ Tap the video to play with sound.</p>
+        <p class="feature-note ru">▶ Нажмите на видео, чтобы включить со звуком.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
   <section id="work" class="portfolio">
     <div class="container">
       <h2><span class="en">Selected work</span><span class="ru">Избранные работы</span></h2>
       <p class="section-sub">
-        <span class="en">Every piece below was generated with Higgsfield. Drop your own files into <code>/images</code> and <code>/video</code> to replace the placeholders — see the README in each folder.</span>
-        <span class="ru">Каждая работа ниже создана с помощью Higgsfield. Добавьте свои файлы в папки <code>/images</code> и <code>/video</code>, чтобы заменить заглушки — инструкция в README каждой папки.</span>
+        <span class="en">Every piece below was generated with Higgsfield. Hover a video to preview, click any card to open it full-size.</span>
+        <span class="ru">Каждая работа создана с помощью Higgsfield. Наведите на видео для превью, кликните на карточку, чтобы открыть в полном размере.</span>
       </p>
-
       <div class="filter-tabs" id="filterTabs">
         <button class="filter-tab active" data-filter="all"><span class="en">All</span><span class="ru">Все</span></button>
+        <button class="filter-tab" data-filter="character"><span class="en">Characters</span><span class="ru">Персонажи</span></button>
+        <button class="filter-tab" data-filter="fashion"><span class="en">Fashion &amp; Ads</span><span class="ru">Фэшн и реклама</span></button>
         <button class="filter-tab" data-filter="video"><span class="en">Video</span><span class="ru">Видео</span></button>
-        <button class="filter-tab" data-filter="image"><span class="en">Image</span><span class="ru">Фото</span></button>
       </div>
-
-      <div class="gallery-grid" id="gallery"><!-- rendered by js/script.js --></div>
+      <div class="gallery" id="gallery"><!-- rendered by js/script.js --></div>
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2><span class="en">About me</span><span class="ru">Обо мне</span></h2>
+        <p class="en">Hi, I'm <strong>[Your Name]</strong> — an AI creator focused on generative video and image. I've spent the last months inside Higgsfield turning prompts into two things that actually perform: characters people want to share, and commercial content businesses want to buy.</p>
+        <p class="ru">Привет, меня зовут <strong>[Ваше имя]</strong> — AI-криэйтор, работающий с генеративным видео и изображениями. Последние месяцы я в Higgsfield превращаю промпты в две вещи, которые реально работают: персонажей, которыми хочется делиться, и коммерческий контент, который хотят покупать.</p>
+        <p class="en">This page is my application for the <strong>AI Creator</strong> role. Everything you see here was made on the platform — from first prompt to final upscale.</p>
+        <p class="ru">Эта страница — моя заявка на позицию <strong>AI Creator</strong>. Всё, что вы видите, создано на платформе — от первого промпта до финального апскейла.</p>
+        <ul class="about-facts">
+          <li><span class="en">Platform:</span><span class="ru">Платформа:</span> Higgsfield (Soul, Cinema Studio, Presets)</li>
+          <li><span class="en">Focus:</span><span class="ru">Фокус:</span> <span class="en">character animation &amp; AI commercial content</span><span class="ru">анимация персонажей и коммерческий AI-контент</span></li>
+          <li><span class="en">Based in:</span><span class="ru">Локация:</span> [Ваш город / Your city]</li>
+        </ul>
+      </div>
+      <div class="about-side">
+        <div class="about-badge">🎬</div>
+        <p class="en">Open to the <strong>AI Creator</strong> role at Higgsfield.</p>
+        <p class="ru">Открыт к позиции <strong>AI Creator</strong> в Higgsfield.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="container contact-inner">
       <h2><span class="en">Let's work together</span><span class="ru">Давайте работать вместе</span></h2>
       <p>
-        <span class="en">Open to the AI Creator role at Higgsfield — and happy to talk about anything creative built with generative video.</span>
-        <span class="ru">Открыт к позиции AI Creator в Higgsfield — и с радостью обсужу любой креатив на генеративном видео.</span>
+        <span class="en">Ready to create for Higgsfield — and happy to talk about anything built with generative video.</span>
+        <span class="ru">Готов создавать для Higgsfield — и с радостью обсужу любой проект на генеративном видео.</span>
       </p>
       <div class="contact-links">
         <a href="mailto:your.email@example.com" class="btn btn-primary">✉️ your.email@example.com</a>
         <a href="#" class="btn btn-ghost" data-placeholder>Instagram</a>
         <a href="#" class="btn btn-ghost" data-placeholder>TikTok</a>
         <a href="#" class="btn btn-ghost" data-placeholder>X / Twitter</a>
-        <a href="#" class="btn btn-ghost" data-placeholder>Behance</a>
+        <a href="#" class="btn btn-ghost" data-placeholder>Higgsfield</a>
       </div>
     </div>
   </section>

@@ -1,17 +1,13 @@
-# /images
+# /images — original source files
 
-Put your photos and video thumbnails here. The gallery on the site expects these exact filenames (edit `js/script.js` → `WORKS` array if you rename or add more):
+These are your **full-resolution originals** straight from Higgsfield (PNG/GIF, 19–22MB each).
 
-| File | Used for |
-|---|---|
-| `profile.jpg` | Your photo in the "About" section |
-| `work-01-poster.jpg` | Poster/thumbnail frame for `video/work-01.mp4` |
-| `work-02.jpg` | Portfolio piece #2 (image) |
-| `work-03.jpg` | Portfolio piece #3 (image) |
-| `work-04-poster.jpg` | Poster/thumbnail frame for `video/work-04.mp4` |
-| `work-05.jpg` | Portfolio piece #5 (image) |
-| `work-06-poster.jpg` | Poster/thumbnail frame for `video/work-06.mp4` |
+The website does **not** load these directly — it loads optimized copies from `assets/thumb/`
+and `assets/full/`. Keeping the originals here means you always have the source to
+re-export or upscale from.
 
-Until a file exists, the site shows a dashed placeholder telling you exactly which file is missing — just drop the real file in with the same name and refresh.
-
-Recommended: JPG/WEBP, portrait orientation (4:5), long edge ≥ 1600px.
+To add a new image to the site:
+1. Put the original here.
+2. Generate optimized `assets/thumb/<name>.jpg` + `assets/full/<name>.jpg`
+   (see the root `README.md` → *Regenerating assets*).
+3. Add an entry to the `WORKS` array in `js/script.js`.

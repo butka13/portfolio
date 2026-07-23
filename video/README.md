@@ -1,15 +1,12 @@
-# /video
+# /video — original source files
 
-Put your Higgsfield-generated video clips here. The gallery expects these exact filenames (edit `js/script.js` → `WORKS` array if you rename or add more):
+These are your **original video clips** from Higgsfield (9:16, ~2–4MB each).
 
-| File | Used for |
-|---|---|
-| `work-01.mp4` | Portfolio piece #1 |
-| `work-04.mp4` | Portfolio piece #4 |
-| `work-06.mp4` | Portfolio piece #6 |
+The website loads web copies from `assets/video/` (with poster frames in `assets/poster/`),
+not these files directly — so the originals stay here as your source.
 
-Each video needs a matching poster image in `/images` (e.g. `work-01-poster.jpg`) — that's the thumbnail shown before the clip plays.
-
-Until a file exists, the site shows a dashed placeholder telling you exactly which file is missing — just drop the real file in with the same name and refresh.
-
-Recommended: MP4 (H.264), portrait orientation (4:5) or vertical, keep each clip under ~20MB so the page stays fast.
+To add a new video to the site:
+1. Put the original here.
+2. Copy it to `assets/video/<name>.mp4` and export a poster frame to `assets/poster/<name>.jpg`
+   (see the root `README.md` → *Regenerating assets*).
+3. Add an entry to the `WORKS` array in `js/script.js` with `type: "video"`.
