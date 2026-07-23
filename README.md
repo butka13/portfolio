@@ -26,12 +26,12 @@ PNGs are 19–22MB each.
 
 ## Personalize the text
 
-In `index.html`, replace:
+Name (Ahmad Sabitbekov), country (Kazakhstan), email and GitHub are already filled in
+from public profile data. Still to add in `index.html`, Contact section:
 
-- `YOUR NAME` (header logo)
-- `[Your Name]` / `[Ваше имя]` (About + footer)
-- `[Ваш город / Your city]` (About facts)
-- `your.email@example.com` and the social links (`Instagram`, `TikTok`, `X / Twitter`, `Higgsfield`) in the Contact section — swap each `href="#"` for your real profile URL.
+- The `Instagram` and `TikTok` links — replace each `href="#"` with your real profile URL,
+  or delete the line if you don't want it shown.
+- Optional: add your exact city to the "Based in" line in the About section.
 
 ## Add or change a work
 
