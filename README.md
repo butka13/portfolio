@@ -72,8 +72,18 @@ python3 -m http.server 8000
 
 ## Deploy (GitHub Pages)
 
-1. Push this branch (or merge into `main`).
-2. Repo **Settings → Pages → Source** → pick the branch and `/ (root)`.
-3. Site publishes at `https://<username>.github.io/<repo>/`.
+### Automatic (recommended)
 
-No build step, no dependencies — plain HTML/CSS/JS.
+A GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) publishes the site on
+every push to `main`. One-time setup:
+
+1. Repo **Settings → Pages → Build and deployment → Source** → select **GitHub Actions**.
+2. Merge this branch into `main` (or push to `main`). The workflow builds and deploys.
+3. Site publishes at `https://butka13.github.io/portfolio/`.
+
+After that, every push to `main` redeploys automatically — no manual steps.
+
+### Manual (branch source)
+
+Alternatively, **Settings → Pages → Source → Deploy from a branch**, pick the branch and
+`/ (root)`. No build step, no dependencies — plain HTML/CSS/JS.
