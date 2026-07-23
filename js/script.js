@@ -50,60 +50,11 @@ const WORKS = [
 
   /* ---------- Animated object characters (image) ---------- */
   {
-    name: "char-fridge", cat: "character", type: "image",
-    title_en: "The Empty Fridge",
-    title_ru: "Пустой холодильник",
-    desc_en: "Pixar-style 3D still — warm cinematic lighting and precise facial emotion.",
-    desc_ru: "3D-кадр в стиле Pixar — тёплый кинематографичный свет и точная эмоция лица."
-  },
-  {
     name: "char-vacuum", cat: "character", type: "image",
     title_en: "Buff Vacuum",
     title_ru: "Пылесос-качок",
     desc_en: "Dynamic pose and personality — a mascot-ready character concept.",
     desc_ru: "Динамичная поза и характер — концепт персонажа, готовый стать маскотом."
-  },
-  {
-    name: "char-kettle", cat: "character", type: "image",
-    title_en: "Boiling Point",
-    title_ru: "Закипевший чайник",
-    desc_en: "Steam, temper and warm kitchen light in a single frame.",
-    desc_ru: "Пар, характер и тёплый кухонный свет в одном кадре."
-  },
-  {
-    name: "char-tv", cat: "character", type: "image",
-    title_en: "Furious TV",
-    title_ru: "Телевизор в гневе",
-    desc_en: "Strong expression and staging that reads instantly on a small screen.",
-    desc_ru: "Яркая эмоция и композиция, которая мгновенно читается на маленьком экране."
-  },
-  {
-    name: "char-washer", cat: "character", type: "image",
-    title_en: "Shocked Washer",
-    title_ru: "Стиралка в шоке",
-    desc_en: "Everyday chore, cinematic treatment — the essence of scroll-stopping content.",
-    desc_ru: "Бытовая рутина в кинематографичной подаче — суть контента, который останавливает скролл."
-  },
-  {
-    name: "char-alarm", cat: "character", type: "image",
-    title_en: "Angry Alarm Clock",
-    title_ru: "Злой будильник",
-    desc_en: "Two subjects, one story beat — object and human in the same consistent world.",
-    desc_ru: "Два героя, один сюжетный момент — предмет и человек в одном консистентном мире."
-  },
-  {
-    name: "char-armchair", cat: "character", type: "image",
-    title_en: "The Lazy Armchair",
-    title_ru: "Ленивое кресло",
-    desc_en: "Cozy, characterful and instantly recognizable — a personality in furniture form.",
-    desc_ru: "Уютный, характерный и мгновенно узнаваемый — характер в форме мебели."
-  },
-  {
-    name: "char-lightbulb", cat: "character", type: "image",
-    title_en: "The Sad Bulb",
-    title_ru: "Грустная лампочка",
-    desc_en: "Minimal scene, maximum emotion — mood built with light alone.",
-    desc_ru: "Минимум сцены, максимум эмоции — настроение, построенное одним светом."
   },
   {
     name: "char-perfume", cat: "character", type: "image",
@@ -112,8 +63,73 @@ const WORKS = [
     desc_en: "Elegant product-meets-character concept — a bridge between branding and storytelling.",
     desc_ru: "Элегантный концепт «продукт-персонаж» — мост между брендингом и сторителлингом."
   },
+  {
+    name: "char-fridge", cat: "character", type: "image",
+    title_en: "The Empty Fridge",
+    title_ru: "Пустой холодильник",
+    desc_en: "Pixar-style 3D still — warm cinematic lighting and precise facial emotion.",
+    desc_ru: "3D-кадр в стиле Pixar — тёплый кинематографичный свет и точная эмоция лица."
+  },
+  {
+    name: "char-lightbulb", cat: "character", type: "image",
+    title_en: "The Sad Bulb",
+    title_ru: "Грустная лампочка",
+    desc_en: "Minimal scene, maximum emotion — mood built with light alone.",
+    desc_ru: "Минимум сцены, максимум эмоции — настроение, построенное одним светом."
+  },
 
-  /* ---------- AI fashion photography (image) ---------- */
+  /* ---------- AI fashion photography (image) — Kazakhstan location shoots ---------- */
+  {
+    name: "fashion-charyn", cat: "fashion", type: "image",
+    title_en: "Charyn Canyon",
+    title_ru: "Чарынский каньон",
+    desc_en: "Photoreal AI model on location — consistent face, golden-hour light, real garments.",
+    desc_ru: "Фотореалистичная AI-модель на локации — консистентное лицо, золотой час, реальная одежда."
+  },
+  {
+    name: "fashion-medeu", cat: "fashion", type: "image",
+    title_en: "Medeu Ice Rink",
+    title_ru: "Каток Медеу",
+    desc_en: "Winter editorial in the Almaty mountains — coat styling with depth and atmosphere.",
+    desc_ru: "Зимний эдиториал в горах Алматы — образ с пальто, глубиной и атмосферой."
+  },
+  {
+    name: "fashion-coffee", cat: "fashion", type: "image",
+    title_en: "Coffee Brand UGC",
+    title_ru: "UGC для кофейни",
+    desc_en: "Branded lifestyle shot with product in hand — ready-made UGC ad content.",
+    desc_ru: "Брендовый lifestyle-кадр с продуктом в руке — готовый UGC-контент для рекламы."
+  },
+  {
+    name: "fashion-expo", cat: "fashion", type: "image",
+    title_en: "Astana — Expo Sphere",
+    title_ru: "Астана — сфера Expo",
+    desc_en: "Streetwear look against a landmark — urban campaign energy.",
+    desc_ru: "Streetwear-образ на фоне достопримечательности — энергия городской кампании."
+  },
+  {
+    name: "fashion-baiterek", cat: "fashion", type: "image",
+    title_en: "Astana — Baiterek",
+    title_ru: "Астана — Байтерек",
+    desc_en: "Summer dress and soft daylight — a warm, catalog-ready lifestyle frame.",
+    desc_ru: "Летнее платье и мягкий дневной свет — тёплый lifestyle-кадр для каталога."
+  },
+  {
+    name: "fashion-floral", cat: "fashion", type: "image",
+    title_en: "Studio — Floral Dress",
+    title_ru: "Студия — цветочное платье",
+    desc_en: "Clean studio product shot on white — every SKU, no photographer.",
+    desc_ru: "Чистый студийный кадр на белом — под каждый товар, без фотографа."
+  },
+  {
+    name: "fashion-velvet", cat: "fashion", type: "image",
+    title_en: "Studio — Velvet Dress",
+    title_ru: "Студия — бархатное платье",
+    desc_en: "Editorial studio pose with mood and texture — high-end campaign look.",
+    desc_ru: "Эдиториал-поза в студии с настроением и фактурой — образ премиальной кампании."
+  },
+
+  /* ---------- AI fashion photography (image) — earlier lookbook ---------- */
   {
     name: "fashion-street", cat: "fashion", type: "image",
     title_en: "Streetstyle — Leather",
